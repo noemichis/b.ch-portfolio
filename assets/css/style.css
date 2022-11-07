@@ -30,6 +30,31 @@
 
   .header {
     grid-area: header;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .logo {
+    float:right;
+    justify-content: left;
+    align-items: center;
+    flex-shrink: inherit;
+  }
+
+  #logo-img {
+    max-width: 150px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .navbar > li {
+    list-style-type: none;
+    margin-right: 1em;
   }
 
   .main {
@@ -38,6 +63,20 @@
 
   .footer {
     grid-area: footer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-media > li {
+    display: inline;
+
   }
 
   .image {
