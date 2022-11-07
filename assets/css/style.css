@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+  }
+  html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  body {
+    /* position: relative; */
+  }
+
+.grid {
+    height: 80%;
+    width: 80%;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas: "header"
+        "main"
+        "footer";
+
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .main {
+    grid-area: main;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+
+  .image {
+    width: 50px;
+    height: 50px;
+  }
