@@ -7,9 +7,6 @@
     overflow: hidden;
   }
 
-  body {
-    /* position: relative; */
-  }
 
 .grid {
     height: 80%;
@@ -36,20 +33,28 @@
   }
 
   .logo {
-    float:right;
     justify-content: left;
     align-items: center;
-    flex-shrink: inherit;
+    flex: 1;
+
   }
 
   #logo-img {
     max-width: 150px;
   }
 
+  nav {
+    display: flex;
+    flex: 1;
+  }
+
   .navbar {
+    padding: 0;
     display: flex;
     justify-content: end;
     align-items: center;
+    flex: 1;
+  
   }
 
   .navbar > li {
@@ -82,4 +87,27 @@
   .image {
     width: 50px;
     height: 50px;
+  }
+
+  
+
+  @media screen and (max-width: 405px) {
+
+
+    .logo {
+      align-items: center;
+      flex: 1;
+    }
+
+    .navbar {
+      margin: 0;
+      padding: 0;
+      flex-direction: column;
+      justify-content: center; 
+    }
+
+    nav {
+      flex: 2;
+    }
+
   }
