@@ -8,17 +8,23 @@
   }
 
   #background-image {
-    background: url(images/uyuni2.jpg) no-repeat center center;
-    background-size: cover;
+  background: url(../images/uyuni-cover.jpg) no-repeat center center;
+  background-size: cover;
+
   }
 
  .grid {
-    max-width: 600px;
+    height: -webkit-fill-available;
+    max-width: 800px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
     padding: 5%;
-    background: yellow;
+    border: 1px solid black;
+
     /* position: absolute;
     top: 50%;
     left: 50%;
@@ -98,7 +104,8 @@
 
   
 
-  @media screen and (max-width: 405px) {
+  @media screen and (max-width: 480px) {
+
 
 
     .logo {
@@ -118,3 +125,5 @@
     }
 
   }
+
+  
