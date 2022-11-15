@@ -66,6 +66,10 @@
     justify-content: left;
   }
 
+  .logo:hover {
+    transform: scale(1.25);
+  } 
+
   #logo-img {
     max-width: 150px;
   }
@@ -88,6 +92,10 @@
     font-weight: bold;
     list-style-type: none;
     margin-right: 1em;
+  }
+
+  .navbar > li:hover {
+    transform: scale(1.25); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
 
   .main {
@@ -181,12 +189,18 @@
   }
 
   .gallery-project * {
-    flex: 1 1 30%;
-    max-width: 100%;
+    padding: 0.5em;
     height: 30vh;
-    object-fit: cover;
+    flex: 1 1 10%;
   }
 
+  .gallery-project div img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
   
 
   
