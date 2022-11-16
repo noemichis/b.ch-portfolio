@@ -242,7 +242,19 @@
 
   } */
 
-  @media screen and (max-width: 725px) {
+
+@media screen and (max-width: 1060px) {
+  .gallery-project * {
+    height: 25vh;
+  }
+
+}
+
+  @media screen and (max-width: 735px) {
+
+    .grid {
+      max-width: 90%;
+    }
 
     nav {
       flex-direction: column;
@@ -253,5 +265,28 @@
     .navbar {
       padding: 0;
     }
+
+    .second-project .gallery-project * {
+      height: 30vh;  
+    }
+
     
+    .third-project .gallery-project * {
+
+    }
   }
+
+  @media screen and (max-width: 735px) {
+    .gallery-project * {
+      height: 20vh;
+    }
+  }
+
+  
+  @media screen and (max-width: 415px) {
+    .gallery-project * {
+      display: flex;
+      height: 15vh;
+    }
+  }
+  
