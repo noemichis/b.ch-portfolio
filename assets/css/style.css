@@ -187,33 +187,32 @@
 
   }
 
-  .gallery-project {
+  .gallery-project1, .gallery-project2, .gallery-project3, .gallery-project4 {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .gallery-project * {
+  .gallery-project1 *, .gallery-project2 *, .gallery-project3 *, .gallery-project4 * {
     padding: 0.1em;
     height: 30vh;
     flex: 1 1 10%;
   }
 
-  .gallery-project div img {
+  .gallery-project2 *{
+    height: 40vh;
+  }
+  .gallery-project4 *{
+    height: 50vh;
+  }
+
+  img {
     max-height: 100%;
     min-width: 100%;
     object-fit: cover;
     object-position: center;
   }
   
-  .second-project .gallery-project * {
-    height: 40vh;
-  }
-
-  .fourth-project .gallery-project * {
-    height: 50vh;
-  }
-
-  .fourth-project .gallery-project img {
+  .gallery-project4 img {
     object-fit: contain;
   }
   
@@ -244,13 +243,20 @@
 
 
 @media screen and (max-width: 1060px) {
-  .gallery-project * {
+  .gallery-project1 *, .gallery-project3 * {
     height: 25vh;
   }
 
+  .gallery-project2 *{
+     height: 35vh;
+  }
+
+  .gallery-project4 *{
+    height: 40vh;
+  }
 }
 
-  @media screen and (max-width: 735px) {
+  @media screen and (max-width: 850px) {
 
     .grid {
       max-width: 90%;
@@ -266,27 +272,36 @@
       padding: 0;
     }
 
-    .second-project .gallery-project * {
+    .gallery-project1 *, .gallery-project3 * {
+      height: 20vh;
+    }
+
+    .gallery-project2 * {
       height: 30vh;  
     }
 
     
-    .third-project .gallery-project * {
+    .gallery-project4 * {
+      height: 35vh;
 
     }
-  }
 
-  @media screen and (max-width: 735px) {
-    .gallery-project * {
-      height: 20vh;
-    }
   }
 
   
-  @media screen and (max-width: 415px) {
-    .gallery-project * {
+  @media screen and (max-width: 485px) {
+    .gallery-project1 *, .gallery-project3 * {
       display: flex;
       height: 15vh;
+    }
+
+    .gallery-project2 * {
+      height: 20vh;
+    }
+
+    .gallery-project4 * {
+      height: 29vh;
+
     }
   }
   
